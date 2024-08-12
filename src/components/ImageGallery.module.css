@@ -1,0 +1,20 @@
+.imgList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.imgItem {
+  display: flex;
+  height: 212px;
+  width: calc((100% - 16px * 3) / 4);
+  border-radius: 6px;
+  transition: box-shadow 200ms linear;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.imgItem:hover {
+  box-shadow: 0px 0px 5px 2px #5f4928;
+}

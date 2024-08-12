@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  backdrop-filter: blur(10px);
+  background-color: #72613780;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #dc650a;
+  border: 1px solid #181938;
+  transition: border 200ms linear;
+  border-radius: 7px;
+}
+
+.input {
+  font-size: 16px;
+  width: 280px;
+  color: #101010;
+  background-color: #f9f8f6;
+  border: 1px solid transparent;
+  outline: transparent;
+  padding: 8px 16px;
+}
+
+.input::placeholder {
+  color: #36333490;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  color: #efdfd1;
+  background-color: #5f4928;
+  transition: background-color 200ms linear;
+  outline: transparent;
+  padding: 4px 12px;
+}
