@@ -7,6 +7,7 @@ import ImageModal from "./components/ImageModal";
 import { useState, useEffect, useRef } from "react";
 import getImages from "./components/unsplash";
 import toast from "react-hot-toast";
+import "./App.css";
 
 //начальное значение состояния, которое задает исходные параметры модального окна, когда компонент только загружается.
 const MODAL_INITIAL_STATE = {
