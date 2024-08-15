@@ -7,13 +7,18 @@ const SearchBar = ({ onSearch }) => {
     evt.preventDefault();
     const form = evt.target;
     const search = form.elements.searchInput.value.trim();
-    search === "" && toast.error("Please enter text to search for images");
+
+    if (search === "") {
+      toast.error("Please enter text to search for images");
+      return;
+    }
     onSearch(search);
     form.reset();
   };
   return (
     <header className={css.header}>
       <Toaster position="top-right" />
+      {/* Компонент  Toaster отображает  уведомления на экране. */}
       <form className={css.form} onSubmit={handleSubmit}>
         <input
           className={css.input}
